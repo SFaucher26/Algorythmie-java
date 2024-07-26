@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 // ROMAN TO INTEGER
 
-class TableHashage{
+class RomansChars{
     public int romanToInt(String s) {
         //Création d'une HashMap
         HashMap<Character, Integer> romanCharacters = new HashMap<Character, Integer>();
@@ -49,7 +49,7 @@ class TableHashage{
 
         // Méthode principale pour tester romanToInt
     public static void main(String[] args) {
-       TableHashage transformRomanToInteger = new TableHashage();
+       RomansChars transformRomanToInteger = new RomansChars();
         
         // Cas de test
         String test1 = "III";
