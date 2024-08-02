@@ -52,17 +52,17 @@ class RomansChars{
        RomansChars transformRomanToInteger = new RomansChars();
         
         // Cas de test
-        String test1 = "III";
+        String test1 = "IVII";
         String test2 = "IV";
-        String test3 = "IX";
-        String test4 = "LVIII";
+        String test3 = "IXX";
+        String test4 = "LVII";
         String test5 = "MCMXCIV";
 
         // Affichage des résultats
-        System.out.println("III -> " + transformRomanToInteger.romanToInt(test1));      // Attendu: 3
+        System.out.println("IVII -> " + transformRomanToInteger.romanToInt(test1));      // Attendu: 3
         System.out.println("IV -> " + transformRomanToInteger.romanToInt(test2));       // Attendu: 4
-        System.out.println("IX -> " + transformRomanToInteger.romanToInt(test3));       // Attendu: 9
-        System.out.println("LVIII -> " + transformRomanToInteger.romanToInt(test4));    // Attendu: 58
+        System.out.println("IXX -> " + transformRomanToInteger.romanToInt(test3));       // Attendu: 9
+        System.out.println("LVII -> " + transformRomanToInteger.romanToInt(test4));    // Attendu: 58
         System.out.println("MCMXCIV -> " + transformRomanToInteger.romanToInt(test5));  // Attendu: 1994
     }
 

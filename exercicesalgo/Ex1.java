@@ -1,5 +1,7 @@
 package exercicesalgo;
-import java.util.*;
+
+import java.util.Scanner;
+import java.util.InputMismatchException;
 
 
 
@@ -9,8 +11,6 @@ public class Ex1 {
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-
-
 
     public static int evenOdd(int num){
     
@@ -22,20 +22,29 @@ public class Ex1 {
 
 
     }
-    public static void main(String args[]) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Ecrire un nombre");
-        int a = in.nextInt();
-        System.out.println("Ecrire un nombre");
-        int b = in.nextInt();
-        System.out.println("Ecrire un nombre");
-        int c = in.nextInt();
+  
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) { // Utilisation de try-with-resources
+            System.out.println("Ecrire un nombre");
+            int a = in.nextInt();
+            System.out.println("a: " + a);
 
-        // Write an answer using System.out.println()
-        // To debug: System.err.println("Debug messages...");
-        Ex1.evenOdd(a); 
-        
-        System.out.println("resultat : " + (evenOdd(a) + evenOdd(b) + evenOdd(c)));
+            System.out.println("Ecrire un nombre");
+            int b = in.nextInt();
+            System.out.println("b: " + b);
+
+            System.out.println("Ecrire un nombre");
+            int c = in.nextInt();
+            System.out.println("c: " + c);
+
+            int resultA = evenOdd(a);
+            int resultB = evenOdd(b);
+            int resultC = evenOdd(c);
+
+            System.out.println("resultat : " + (resultA + resultB + resultC));
+        } catch (InputMismatchException e) {
+            System.out.println("Erreur : Veuillez entrer un nombre valide.");
+        }
     }
 }
 

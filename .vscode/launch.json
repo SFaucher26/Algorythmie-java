@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Liste",
+            "request": "launch",
+            "mainClass": "listes.Liste",
+            "projectName": "collections-java_f2c00d13"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Ex1",
+            "request": "launch",
+            "mainClass": "exercicesalgo.Ex1",
+            "projectName": "collections-java_f2c00d13",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
+            "name": "List",
+            "request": "launch",
+            "mainClass": "listes.List",
+            "projectName": "collections-java_f2c00d13",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
+            "name": "RomansChars",
+            "request": "launch",
+            "mainClass": "map.RomansChars",
+            "projectName": "collections-java_f2c00d13",
+            "console": "internalConsole"
+        }
+    ]
+}
